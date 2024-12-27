@@ -1,0 +1,32 @@
+---
+import Item from './Item.astro';
+import Logo from '../assets/pattern-graphic-design.svg';
+import UXUI from '../assets/pattern-ui-ux.svg'
+import Apps from '../assets/pattern-apps.svg'
+import Illustration from '../assets/pattern-illustrations.svg'
+import Photography from '../assets/pattern-photography.svg'
+import Motion from '../assets/pattern-motion-graphics.svg'
+---
+
+<section class="mt-[32px] md:mt-[64px] lg:mt-[80px]">
+    <div class="grid grid-cols-2 gap-[24px] grid-rows-sm md:grid-cols-4 md:grid-rows-md lg:grid-cols-6 lg:grid-rows-lg">
+        <Item class="bg-[#755CDE] col-span-2 row-span-2" descriptionText="Graphic Design">
+            <Logo class="ml-auto block"/>
+        </Item>
+        <Item descriptionText="UX-UI" class="bg-[#F6A560]">
+             <UXUI class="ml-auto block"/>
+        </Item>
+        <Item descriptionText="Apps" class="bg-[#F39E9E]">
+            <Apps class="ml-auto block"/>
+        </Item>
+        <Item descriptionText="Illustrations" class="bg-[#EB7565] col-span-2">
+            <Illustration class="ml-auto block"/>
+        </Item>
+        <Item descriptionText="Photography" class="bg-[#61C4B7] col-span-2">
+            <Photography class="ml-auto block"/>
+        </Item>
+        <Item descriptionText="Motion Graphics" class="bg-[#552049] rounded-[8px] col-span-2">
+            <Motion class="ml-auto block"/>
+        </Item>
+    </div>
+</section>

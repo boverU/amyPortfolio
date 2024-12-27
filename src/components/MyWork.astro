@@ -1,0 +1,27 @@
+---
+import {Image} from 'astro:assets';
+import slide1 from '../assets/image-slide-1.jpg'
+import slide2 from '../assets/image-slide-2.jpg'
+import slide3 from '../assets/image-slide-3.jpg'
+import slide4 from '../assets/image-slide-4.jpg'
+import ArrowLeft from '../assets/icon-arrow-left.svg'
+import ArrowRight from '../assets/icon-arrow-right.svg'
+---
+
+<section class="flex-col space-y-[32px] lg:space-y-[56px] lg:py-[88px] py-[100px] md:py-[120px]">
+    <h3 class="text-center font-bold text-[24px]">My Work</h3>
+    <div class="flex space-x-[30px]  justify-around snap-center overflow-scroll">
+        <Image class="rounded-[8px] aspect-[1.5]" src={slide2} alt="slide2"/>
+        <Image class="rounded-[8px] aspect-[1.5]" src={slide3} alt="slide3"/>
+        <Image class="rounded-[8px] aspect-[1.5]" src={slide4} alt="slide4"/>
+        <Image class="rounded-[8px] aspect-[1.5]" src={slide1} alt="slide1"/>
+    </div>
+    <div class="flex space-x-[16px] justify-center">
+        <button class='w-[48px] h-[48px] bg-black rounded-full flex justify-center items-center hover:bg-[#755CDE]' >
+            <ArrowLeft class="text-black"/>
+        </button>
+        <button class='w-[48px] h-[48px] bg-black rounded-full flex justify-center items-center hover:bg-[#755CDE]' >
+            <ArrowRight class="text-black"/>
+        </button>
+    </div>
+</section>

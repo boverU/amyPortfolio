@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+import Description from '../components/Description.astro';
+import Grid from '../components/Grid.astro'
+import Hero from '../components/Hero.astro';
+import MyWork from '../components/MyWork.astro';
+import ContactMe from '../components/ContactMe.astro';
+---
+
+<Layout>
+    <main class="w-full flex-col justify-self-center justify-center bg-[#FFF7F0]">
+        <div class="container p-[16px] flex-col justify-self-center md:p-[40px] md:py-[34px] lg:max-w-[1180px]">
+            <Header />
+            <Description />
+            <Grid />
+            <Hero />
+        </div>
+        <div class="w-full">
+            <MyWork />
+        </div>
+        <div class="container p-[16px] flex-col space-y-[32px] lg:space-y-[88px] justify-self-center">
+            <ContactMe/>
+            <Header/>
+        </div>
+    </main>
+</Layout>
+

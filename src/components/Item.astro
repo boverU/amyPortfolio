@@ -1,0 +1,12 @@
+---
+const { class: className, descriptionText } = Astro.props;
+---
+
+<div class:list={[className, "rounded-[8px] p-[24px] flex-col relative"]}>
+    <div>
+        <slot />
+    </div>
+    <span class="absolute bottom-[24px] text-white text-[24px]">
+           {descriptionText}
+    </span>
+</div>

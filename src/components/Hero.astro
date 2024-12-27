@@ -1,0 +1,16 @@
+---
+import heroImage from '../assets/image-amy.webp';
+import { Image } from 'astro:assets'
+import Button from './Button.astro';
+---
+
+<section class="mt-[100px] md:mt-[120px] lg:mt-[136px] flex flex-col md:flex-row items-center justify-center md:space-x-[70px] lg:space-x-[125px]">
+    <div class="flex justify-center shrink-0">
+        <Image class="lg:w-[445px] lg:h-[445px]" width={300} height={300}  src={heroImage} alt="hero"/>
+    </div>
+    <div class="flex-col">
+        <h2 class="font-bold text-[26px] md:text-[36px] text-center mt-[40px] md:text-left lg:text-[40px]">I’m Amy, and I’d love to work on your next project</h2>
+        <p class="my-[24px] text-center md:text-left lg:text-[18px]">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <Button class="bg-[#EB7565] justify-self-center hover:bg-[#F6A560] md:justify-self-start">Free consultation</Button>
+    </div>
+</section>

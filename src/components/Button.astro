@@ -1,0 +1,7 @@
+---
+const {text, class:className} = Astro.props;
+---
+
+<button class:list={[className,"block py-[12px] px-[28px] text-white rounded-[24px] md:py-[14px] md:px-[48px]"]}>
+   <slot />
+</button>
